@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RGSForumViewController: UIViewController {
+class RGSForumViewController: RGSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

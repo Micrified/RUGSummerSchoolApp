@@ -8,8 +8,18 @@
 
 import UIKit
 
-class RGSAnnouncementViewController: UIViewController {
+class RGSAnnouncementViewController: RGSBaseViewController {
 
+    
+    // MARK: - RGSControlBar Protocol Methods Overrides
+    
+    override func shouldShowTitleLabel() -> (Bool, String?) {
+        return (true, "Annoucements")
+    }
+    
+    
+    // MARK: - Class Method Overrides
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RGSLecturerViewController: UIViewController {
+class RGSLecturerViewController: RGSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

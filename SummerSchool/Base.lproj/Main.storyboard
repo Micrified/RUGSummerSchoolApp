@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="-215"/>
+            <point key="canvasLocation" x="1089" y="-428"/>
         </scene>
         <!--Info-->
         <scene sceneID="VxN-l0-CPk">
@@ -164,24 +164,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDJ-hX-SYy" customClass="RGSControlBarView" customModule="SummerSchool" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xct-h5-Zj2" customClass="RGSControlBarView" customModule="SummerSchool" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="BuJ-jw-jYl"/>
+                                    <constraint firstAttribute="height" constant="45" id="5QM-Pd-8dK"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="BDJ-hX-SYy" secondAttribute="trailing" id="J6V-wQ-p4e"/>
-                            <constraint firstItem="BDJ-hX-SYy" firstAttribute="leading" secondItem="5PT-BZ-ar8" secondAttribute="leading" id="gBu-mo-cTc"/>
-                            <constraint firstItem="BDJ-hX-SYy" firstAttribute="top" secondItem="LjO-Yo-fmW" secondAttribute="bottom" constant="8" id="smj-vU-vdh"/>
+                            <constraint firstItem="Xct-h5-Zj2" firstAttribute="leading" secondItem="5PT-BZ-ar8" secondAttribute="leading" id="2Nx-hJ-LSk"/>
+                            <constraint firstItem="Xct-h5-Zj2" firstAttribute="top" secondItem="LjO-Yo-fmW" secondAttribute="bottom" id="BIQ-Tn-66w"/>
+                            <constraint firstAttribute="trailing" secondItem="Xct-h5-Zj2" secondAttribute="trailing" id="cW2-T2-pyr"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Info" id="jR0-Xv-eRC"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="InfoIcon" id="jR0-Xv-eRC"/>
                     <connections>
-                        <outlet property="controlBar" destination="BDJ-hX-SYy" id="Qwp-rD-nrX"/>
+                        <outlet property="controlBar" destination="Xct-h5-Zj2" id="zSD-yL-NsE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxH-V0-fjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -199,13 +199,30 @@
                     <view key="view" contentMode="scaleToFill" id="yZa-cO-sFR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQi-av-Cbe" customClass="RGSControlBarView" customModule="SummerSchool" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="eD2-Ec-WvY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iQi-av-Cbe" firstAttribute="leading" secondItem="yZa-cO-sFR" secondAttribute="leading" id="E6n-Qe-EQh"/>
+                            <constraint firstItem="iQi-av-Cbe" firstAttribute="top" secondItem="oQD-ql-cgI" secondAttribute="bottom" id="QX3-3y-kau"/>
+                            <constraint firstAttribute="trailing" secondItem="iQi-av-Cbe" secondAttribute="trailing" id="dOt-Ax-S86"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Announcements" id="D3G-fl-qmg"/>
+                    <tabBarItem key="tabBarItem" title="Announcements" image="AnnouncementIcon" id="D3G-fl-qmg"/>
+                    <connections>
+                        <outlet property="controlBar" destination="iQi-av-Cbe" id="4Eh-0H-UhS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="de2-hH-8tp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622" y="1335"/>
+            <point key="canvasLocation" x="-623.20000000000005" y="1334.4827586206898"/>
         </scene>
         <!--Staff-->
         <scene sceneID="bzE-rY-q6v">
@@ -218,13 +235,30 @@
                     <view key="view" contentMode="scaleToFill" id="vAe-h4-VTV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="db1-QB-VX4" customClass="RGSControlBarView" customModule="SummerSchool" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="SNI-8X-a38"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="db1-QB-VX4" firstAttribute="top" secondItem="t9B-5p-CAy" secondAttribute="bottom" id="4IO-E5-Sdt"/>
+                            <constraint firstItem="db1-QB-VX4" firstAttribute="leading" secondItem="vAe-h4-VTV" secondAttribute="leading" id="9Pl-lo-71y"/>
+                            <constraint firstAttribute="trailing" secondItem="db1-QB-VX4" secondAttribute="trailing" id="dbG-sJ-EeP"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Staff" id="zc0-T6-99u"/>
+                    <tabBarItem key="tabBarItem" title="Staff" image="LecturerIcon" id="zc0-T6-99u"/>
+                    <connections>
+                        <outlet property="controlBar" destination="db1-QB-VX4" id="yW0-gP-edg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3C-wu-GN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="1334"/>
+            <point key="canvasLocation" x="221.59999999999999" y="1333.5832083958021"/>
         </scene>
         <!--Schedule-->
         <scene sceneID="M3R-ac-QeQ">
@@ -237,13 +271,30 @@
                     <view key="view" contentMode="scaleToFill" id="VxF-mh-CWm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ZH-Ql-PeE" customClass="RGSControlBarView" customModule="SummerSchool" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7Nt-h4-dUI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4ZH-Ql-PeE" secondAttribute="trailing" id="EWA-Ag-Lig"/>
+                            <constraint firstItem="4ZH-Ql-PeE" firstAttribute="top" secondItem="d4c-8o-rs4" secondAttribute="bottom" id="aKg-5y-mnG"/>
+                            <constraint firstItem="4ZH-Ql-PeE" firstAttribute="leading" secondItem="VxF-mh-CWm" secondAttribute="leading" id="vWy-Qz-WX0"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Schedule" id="u9x-IE-y4w"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="ScheduleIcon" id="u9x-IE-y4w"/>
+                    <connections>
+                        <outlet property="controlBar" destination="4ZH-Ql-PeE" id="Dg5-vE-3oi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuE-jz-3XK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="1334"/>
+            <point key="canvasLocation" x="1088.8" y="1333.5832083958021"/>
         </scene>
         <!--Forum-->
         <scene sceneID="pJc-oW-Wiu">
@@ -256,13 +307,30 @@
                     <view key="view" contentMode="scaleToFill" id="qmf-6b-pVO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CXh-U5-hc9" customClass="RGSControlBarView" customModule="SummerSchool" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="FEY-GU-Xnm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CXh-U5-hc9" firstAttribute="top" secondItem="H4y-TM-gwa" secondAttribute="bottom" id="2wz-gZ-3yu"/>
+                            <constraint firstItem="CXh-U5-hc9" firstAttribute="leading" secondItem="qmf-6b-pVO" secondAttribute="leading" id="SFh-vM-I4h"/>
+                            <constraint firstAttribute="trailing" secondItem="CXh-U5-hc9" secondAttribute="trailing" id="oNn-Fc-wud"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Forum" id="mnA-SW-rZg"/>
+                    <tabBarItem key="tabBarItem" title="Forum" image="ForumIcon" id="mnA-SW-rZg"/>
+                    <connections>
+                        <outlet property="controlBar" destination="CXh-U5-hc9" id="SOc-c0-WBt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rob-Yc-LPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1966" y="1335"/>
+            <point key="canvasLocation" x="1965.5999999999999" y="1334.4827586206898"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0Gn-3v-VTR">
@@ -323,6 +391,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AnnouncementIcon" width="24" height="24"/>
+        <image name="ForumIcon" width="24" height="24"/>
+        <image name="InfoIcon" width="24" height="24"/>
+        <image name="LecturerIcon" width="24" height="24"/>
         <image name="Profile" width="128" height="128"/>
+        <image name="ScheduleIcon" width="24" height="24"/>
     </resources>
 </document>

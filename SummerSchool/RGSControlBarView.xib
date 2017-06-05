@@ -21,13 +21,6 @@
             <rect key="frame" x="0.0" y="0.0" width="388" height="45"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-y7-VqY">
-                    <rect key="frame" x="20" y="8" width="34" height="30"/>
-                    <state key="normal" title="Back"/>
-                    <connections>
-                        <action selector="didSelectReturnButton:" destination="-1" eventType="touchUpInside" id="mVN-YY-w37"/>
-                    </connections>
-                </button>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4G-d2-yfF">
                     <rect key="frame" x="153.5" y="12" width="81.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -35,15 +28,21 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDv-av-zkF">
-                    <rect key="frame" x="344" y="12" width="24" height="24"/>
+                    <rect key="frame" x="333" y="6.5" width="35" height="35"/>
                     <state key="normal" image="NutIcon"/>
-                    <state key="highlighted" image="NutIconSelected"/>
                     <connections>
                         <action selector="didSelectSettingsButton:" destination="-1" eventType="touchUpInside" id="qSr-ed-kBA"/>
                     </connections>
                 </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKx-y7-VqY">
+                    <rect key="frame" x="20" y="5" width="35" height="35"/>
+                    <state key="normal" image="ReturnArrow"/>
+                    <connections>
+                        <action selector="didSelectReturnButton:" destination="-1" eventType="touchUpInside" id="mVN-YY-w37"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="LKx-y7-VqY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="UDT-w2-oFf"/>
                 <constraint firstAttribute="trailing" secondItem="fDv-av-zkF" secondAttribute="trailing" constant="20" id="XY6-bZ-4V6"/>
@@ -58,7 +57,7 @@
         </view>
     </objects>
     <resources>
-        <image name="NutIcon" width="24" height="24"/>
-        <image name="NutIconSelected" width="24" height="24"/>
+        <image name="NutIcon" width="35" height="35"/>
+        <image name="ReturnArrow" width="35" height="35"/>
     </resources>
 </document>

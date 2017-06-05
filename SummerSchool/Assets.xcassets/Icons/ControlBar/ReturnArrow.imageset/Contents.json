@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "RGSNutSelected1x.png",
+      "filename" : "RGSReturnArrow1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "RGSNutSelected2x.png",
+      "filename" : "RGSReturnArrow2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "RGSNutSelected3x.png",
+      "filename" : "RGSReturnArrow3x.png",
       "scale" : "3x"
     }
   ],

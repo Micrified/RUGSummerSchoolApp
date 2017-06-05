@@ -10,7 +10,7 @@ import UIKit
 
 class RGSControlBarView: UIView {
     
-    // MAIN: Variables
+    // MARK: - Variables
     
     /// The view delegate
     var delegate: RGSControlBarDelegate! {
@@ -32,8 +32,7 @@ class RGSControlBarView: UIView {
         return String(describing: type(of: self))
     }
     
-    // MAIN:-
-    // MAIN: IBOutlets
+    // MARK: - Outlets
     
     /// The optional return button.
     @IBOutlet weak var returnButton: UIButton!
@@ -44,8 +43,7 @@ class RGSControlBarView: UIView {
     /// The optional title label.
     @IBOutlet weak var titleLabel: UILabel!
     
-    // MAIN:-
-    // MAIN: IBActions
+    // MARK: - Actions
     
     @IBAction func didSelectSettingsButton(_ sender: UIButton) {
         if (delegate != nil) {
@@ -59,8 +57,7 @@ class RGSControlBarView: UIView {
         }
     }
     
-    // MAIN:-
-    // MAIN: Nib Initializer
+    // MARK: - Nib Initializer
     
     func loadViewFromNib() {
         contentView = Bundle.main.loadNibNamed(nibName, owner: self, options: nil)?[0] as! UIView
@@ -69,8 +66,7 @@ class RGSControlBarView: UIView {
         addSubview(contentView)
     }
     
-    // MAIN:-
-    // MAIN: Class Method Overrides
+    // MARK: - Class Method Overrides
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RGSScheduleViewController: UIViewController {
+class RGSScheduleViewController: RGSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

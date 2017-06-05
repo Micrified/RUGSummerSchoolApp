@@ -20,7 +20,7 @@ class RGSInfoViewController: UIViewController, RGSControlBarDelegate {
     }
     
     func shouldShowReturnButton() -> Bool {
-        return false
+        return true
     }
     
     func didSelectReturnButton(_ sender: UIButton) -> Void {
