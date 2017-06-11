@@ -9,6 +9,15 @@
 import UIKit
 
 class RGSForumViewController: RGSBaseViewController {
+    
+    // MARK: - RGSControlBar Protocol Methods Overrides
+    
+    override func shouldShowTitleLabel() -> (Bool, String?) {
+        return (true, "Forum")
+    }
+    
+    
+    // MARK: - Class Method Overrides
 
     override func viewDidLoad() {
         super.viewDidLoad()

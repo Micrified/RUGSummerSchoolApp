@@ -9,7 +9,16 @@
 import UIKit
 
 class RGSLecturerViewController: RGSBaseViewController {
-
+    
+    // MARK: - RGSControlBar Protocol Methods Overrides
+    
+    override func shouldShowTitleLabel() -> (Bool, String?) {
+        return (true, "Lecturers")
+    }
+    
+    
+    // MARK: - Class Method Overrides
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

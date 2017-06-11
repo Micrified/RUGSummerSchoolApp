@@ -12,8 +12,7 @@ class RGSInfoViewController: UIViewController, RGSControlBarDelegate {
     
     @IBOutlet weak var controlBar: RGSControlBarView!
     
-    // MARK: -
-    // MARK: Delegated Methods
+    // MARK: - Delegated Methods
     
     func shouldShowTitleLabel() -> (Bool, String?) {
         return (true, "General Information")
@@ -31,8 +30,7 @@ class RGSInfoViewController: UIViewController, RGSControlBarDelegate {
         print("The settings button was toggled!")
     }
     
-    // MARK: -
-    // MARK: Class Methods
+    // MARK: - Class Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()

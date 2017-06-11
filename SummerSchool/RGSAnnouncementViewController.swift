@@ -14,7 +14,7 @@ class RGSAnnouncementViewController: RGSBaseViewController {
     // MARK: - RGSControlBar Protocol Methods Overrides
     
     override func shouldShowTitleLabel() -> (Bool, String?) {
-        return (true, "Annoucements")
+        return (true, "Announcements")
     }
     
     
